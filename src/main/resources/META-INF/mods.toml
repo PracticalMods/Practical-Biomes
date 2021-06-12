@@ -6,7 +6,7 @@ issueTrackerURL="https://github.com/TheWarmFuzzy/Practical-Biomes/issues"
 
 [[mods]]
     modId="practicalbiomes" 
-    version="0.0.0.1"
+    version="0.0.1.0"
     displayName="Practical Biomes"
     #updateJSONURL="https://change.me.example.invalid/updates.json"
     #displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
