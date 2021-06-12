@@ -6,6 +6,7 @@ import ca.thewarmfuzzy.practicalbiomes.common.lib.ItemsPB;
 import ca.thewarmfuzzy.practicalbiomes.common.util.inventory.ItemGroupPB;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.item.Rarity;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -16,6 +17,9 @@ public class ModItems {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
+
+        //Items
+        ItemsPB.OBSIDIAN_SCRAP = registerItem(ModIDs.ID_ITEM_OBSIDIAN_SCRAP, new ItemObsidianScrap(new Item.Properties().maxStackSize(64).rarity(Rarity.COMMON).isImmuneToFire().group(ItemGroupPB.instance)));
 
         //Fluids
         ItemsPB.INFUSED_WATER_BUCKET = registerItem(ModIDs.ID_ITEM_INFUSED_WATER_BUCKET, new ItemInfusedWaterBucket(() -> FluidsPB.FLUID_INFUSED_WATER_SOURCE, new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ItemGroupPB.instance)));

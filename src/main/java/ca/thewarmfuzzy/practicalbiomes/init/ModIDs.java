@@ -16,5 +16,6 @@ public class ModIDs {
 
     //Items
     public static final String ID_ITEM_INFUSED_WATER_BUCKET = "infused_water_bucket";
+    public static final String ID_ITEM_OBSIDIAN_SCRAP = "obsidian_scrap";
 
 }
